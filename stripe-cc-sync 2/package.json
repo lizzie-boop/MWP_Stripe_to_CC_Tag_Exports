@@ -1,0 +1,15 @@
+{
+  "name": "stripe-cc-sync",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Realtime Stripe subscription status -> Constant Contact tags (and optional reactivation list)",
+  "scripts": {
+    "test": "node --test --experimental-test-module-mocks test/*.test.mjs",
+    "backfill": "node scripts/backfill.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0",
+    "stripe": "^17.7.0"
+  }
+}
